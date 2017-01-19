@@ -101,6 +101,68 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2017-01-19T07:46:45.000Z"><a href="/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/">Thu, Jan 19 2017, 3:46:45 pm</a></time>
+
+  
+    <h1 class="title"><a href="/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/">MRjob查询提交主机（client or launcher）ip方法</a></h1>
+  
+
+
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <p>工作中需要查询MRjob是由哪台client机器（launcher）提交的app开始认为AMlog中会打印，但是没有，以为是没有开启debug模式，但是通过查看源码，定位到JobSubmitter 这个类会获取提交机器主机名及ip信息是以configuration到形式存储的，所以可以通过查询app的配置信息找到.</p>
+<p>具体如下：</p>
+<pre><code>1.  找到需要查询的app页面，点击左侧的Configuration选项；
+2.  可直接看到mapreduce.job.submithostaddress这个选项的值，就为提交主机ip。
+
+注：如configuration过多，可访问hdfs的job_*_*_conf.xml文件grep即可查到对应ip信息(configuration页面的上显示hdfs文件的完整路径)。
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="http://yoursite.com/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2017-01-16T10:03:33.000Z"><a href="/2017/01/16/My-second-blog/">Mon, Jan 16 2017, 6:03:33 pm</a></time>
 
   
