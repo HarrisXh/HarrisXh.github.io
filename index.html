@@ -101,6 +101,66 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2017-02-15T01:55:37.000Z"><a href="/2017/02/15/linux系统maildrop目录问题/">Wed, Feb 15 2017, 9:55:37 am</a></time>
+
+  
+    <h1 class="title"><a href="/2017/02/15/linux系统maildrop目录问题/">linux系统maildrop目录问题</a></h1>
+  
+
+
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <p>/var/spool/postfix/maildrop/目录下产生大量文件，简单来说就是mail没有发送成功的邮件.<br>具体原理：在linux执行cron时，会将cron执行脚本中的output和warning信息以邮件形式发送给cron的所有者，而由于服务器上的sendmail或postfix没有正常运行，导致邮件发送不成功，全部小文件堆积在了maildrop目录下（注意：如果sendmail或者postfix正常运行，则会在/var/mail目录下产生大量的邮件，也会堆积）</p>
+<p>解决方案：</p>
+<pre><code>1. 在crontab的第一行加入&quot;MAILTO=&quot;&quot;&quot;（执行cron时，不发送邮件）
+2. 将cron中执行脚本的output重定向到指定文件或者/dev/null中.
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2017/02/15/linux系统maildrop目录问题/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="http://yoursite.com/2017/02/15/linux系统maildrop目录问题/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2017/02/15/linux系统maildrop目录问题/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2017-01-19T07:46:45.000Z"><a href="/2017/01/19/MRjob查询提交主机（client-or-launcher）ip方法/">Thu, Jan 19 2017, 3:46:45 pm</a></time>
 
   
