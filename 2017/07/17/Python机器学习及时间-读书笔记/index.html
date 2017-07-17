@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>&lt;&lt;Python机器学习及时间&gt;&gt;读书笔记 | Harris Xiao</title>
+  <title>&lt;&lt;Python机器学习及实践&gt;&gt;读书笔记 | Harris Xiao</title>
   <meta name="author" content="Xiaohong">
   
   <meta name="description" content="小结：  这本书对常见的机器学习算法都做了全面的概述，包括有监督学习，无监督学习，涵盖了全面的传统机器学习算法，已经集成学习算法，没有算法进行深入探究，介绍了每种算法的使用场景，已经算法的在skit-learn的使用方法，没有涉及到数学知识，非常适合初学者特点：  介绍基本机器学习流程，算法全面，适">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="&lt;&lt;Python机器学习及时间&gt;&gt;读书笔记"/>
+  <meta property="og:title" content="&lt;&lt;Python机器学习及实践&gt;&gt;读书笔记"/>
   <meta property="og:site_name" content="Harris Xiao"/>
 
   
@@ -74,7 +74,7 @@
       <time datetime="2017-07-17T08:16:51.000Z"><a href="/2017/07/17/Python机器学习及时间-读书笔记/">Mon, Jul 17 2017, 4:16:51 pm</a></time>
 
   
-    <h1 class="title">&lt;&lt;Python机器学习及时间&gt;&gt;读书笔记</h1>
+    <h1 class="title">&lt;&lt;Python机器学习及实践&gt;&gt;读书笔记</h1>
   
 
 
@@ -85,7 +85,7 @@
     <div class="entry">
       
         <p>小结：<br>  这本书对常见的机器学习算法都做了全面的概述，包括有监督学习，无监督学习，涵盖了全面的传统机器学习算法，已经集成学习算法，没有算法进行深入探究，介绍了每种算法的使用场景，已经算法的在skit-learn的使用方法，没有涉及到数学知识，非常适合初学者<br>特点：<br>  介绍基本机器学习流程，算法全面，适合初学者对整体机器学习学科以及实践有全面的了解</p>
-<p>进阶篇：</p>
+<p>进阶篇：<br>  本章主要介绍了特征的抽取或者筛选，优化模型配置等内容。<br>  一个好的model，常常以泛化能力是否好为衡量好坏的标准，而我们怎么能训练好一个模型呢？<br>  训练数据的特征是不是最好的？模型的参数是否是最好的？<br>  特征抽取：就是逐条将原始数据转化为特征向量的形式<br>  DictVectorizer对以字典数据结构存储对数据，进行特征抽取和向量化，CountVectorizer对字符串进行特征向量化(统计所有字符串中出现词的词频Term Frequency)，TfidfVectorizer也是对字符串进行特征向量化(除了使用词频，还是关注这个词汇在训练文本条数的倒数，可以利用它压制常见词汇对分类决策干扰)<br>  停用词(Stop Words)：像英文中the、a等<br>  实践经验, 在处理大量文本时，去掉stop words，并使用Tfidf生成特征向量效果最佳<br>  特征筛选：在高维度，已量化的特征向量中选择对指定任务更有效的特征组合<br>  本书给出的结论，良好的数据特征组合不需要太多，就能是model性能表现突出，冗余的特征不会影响model性能，却会使cpu做无用功，而不良的特征会降低模型精度</p>
 
       
     </div>
